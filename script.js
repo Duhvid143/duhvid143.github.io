@@ -4,7 +4,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
         window.scrollTo({
-            top: targetElement.offsetTop - 60, // Adjust for sticky nav
+            top: targetElement.offsetTop - 60, // Adjust for fixed header
             behavior: 'smooth'
         });
     });
